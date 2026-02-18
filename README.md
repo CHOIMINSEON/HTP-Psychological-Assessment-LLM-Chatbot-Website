@@ -96,6 +96,8 @@ HTP 그림 검사 이미지를 자연어로 설명하는 다양한 모델 비교
 - **CLIP Interrogator** (ViT-L-14/openai)
 - **GPT-4o** (OpenAI Vision API)
 
+<br>
+
 **2. 컴퓨터 비전 (Computer Vision)**
 
 HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
@@ -108,9 +110,13 @@ HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
 2. YOLOv8 학습 (100 epochs, early stopping)
 3. Detectron2 학습 (2500 iterations, early stopping)
 
+<br>
+
 **2.5 이미지 캡션 모델+컴퓨터 비전 모델**
 - YOLOv8로 객체 탐지 후 결과를 캡셔닝 모델의 프롬프트에 포함
 - GPT-4o + YOLO, InstructBLIP + YOLO 조합으로 정확도 향상 시도 -> 캡션 모델 단독 출력 채택
+
+<br>
 
 **3. LLM 파인튜닝 (Fine-tuning)**
 
@@ -125,6 +131,8 @@ HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
 - **Qwen 2.5 7B** (Alibaba - 다국어 지원 우수)
 - **LLaVA** (멀티모달 - 이미지+텍스트)
 - **BLIP-2** (이미지 캡셔닝 특화)
+
+<br>
 
 **4. RAG 시스템 (Retrieval-Augmented Generation)**
 
