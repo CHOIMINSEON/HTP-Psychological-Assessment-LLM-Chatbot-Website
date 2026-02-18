@@ -1,0 +1,5 @@
+# API 키가 포함된 파일들 (보안상 GitHub에 업로드하지 않음)
+RAG/Chunking/브런치_집_나무_사람_청킹.ipynb
+RAG/Embedding/심리_해석_임베딩_파인튜닝.ipynb
+RAG/Cross_Encoder/cleaned_Cross_Encoder_Negative.ipynb
+RAG/Cross_Encoder/cleaned_Cross_Encoder_hard_Negative.ipynb
