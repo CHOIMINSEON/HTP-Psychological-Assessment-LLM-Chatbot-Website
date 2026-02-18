@@ -105,6 +105,7 @@ HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
 **모델:**
 - **YOLOv8** (속도와 정확도 균형)
 - **Detectron2** (Faster R-CNN R-50 FPN)
+  
 **학습 워크플로우:**
 1. 데이터 전처리 (캐시 삭제, 라벨 구조 정리)
 2. YOLOv8 학습 (100 epochs, early stopping)
