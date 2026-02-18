@@ -132,27 +132,12 @@ HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
 
 **파이프라인**
 
-[사용자 질문] 
-
-    ↓
-    
-[1. Chunking] 심리 서적/논문을 의미 단위로 분할
-
-    ↓
-    
-[2. Embedding] BGE-M3 모델로 벡터화 (파인튜닝)
-
-    ↓
-    
-[3. Retrieval] ChromaDB에서 유사 문서 검색
-
-    ↓
-    
-[4. Re-ranking] Cross-Encoder로 최적화(**BCE Loss** vs **Margin Loss** 비교)
-
-    ↓
-    
-[5. Generation] LLM이 컨텍스트 기반 답변 생성
+- [사용자 질문]  
+- [1. Chunking] 심리 서적/논문을 의미 단위로 분할
+- [2. Embedding] BGE-M3 모델로 벡터화 (파인튜닝)
+- [3. Retrieval] ChromaDB에서 유사 문서 검색
+- [4. Re-ranking] Cross-Encoder로 최적화(**BCE Loss** vs **Margin Loss** 비교)
+- [5. Generation] LLM이 컨텍스트 기반 답변 생성
 
 
 
