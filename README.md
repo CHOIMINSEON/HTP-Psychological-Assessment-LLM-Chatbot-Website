@@ -85,7 +85,7 @@ HTP-Psychological-Assessment-LLM-Chatbot-Website/
 ---
 ## [주요 기능]
 
-**이미지 캡셔닝 (Image Captioning)**
+**1. 이미지 캡셔닝 (Image Captioning)**
 
 HTP 그림 검사 이미지를 자연어로 설명하는 다양한 모델 비교
 
@@ -96,7 +96,7 @@ HTP 그림 검사 이미지를 자연어로 설명하는 다양한 모델 비교
 - **CLIP Interrogator** (ViT-L-14/openai)
 - **GPT-4o** (OpenAI Vision API)
 
-**컴퓨터 비전 (Computer Vision)**
+**2. 컴퓨터 비전 (Computer Vision)**
 
 HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
 
@@ -108,11 +108,11 @@ HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
 2. YOLOv8 학습 (100 epochs, early stopping)
 3. Detectron2 학습 (2500 iterations, early stopping)
 
-**이미지 캡션 모델+컴퓨터 비전 모델**
+**2.5 이미지 캡션 모델+컴퓨터 비전 모델**
 - YOLOv8로 객체 탐지 후 결과를 캡셔닝 모델의 프롬프트에 포함
 - GPT-4o + YOLO, InstructBLIP + YOLO 조합으로 정확도 향상 시도 -> 캡션 모델 단독 출력 채택
 
-**LLM 파인튜닝 (Fine-tuning)**
+**3. LLM 파인튜닝 (Fine-tuning)**
 
 심리 해석 전문 LLM 구축을 위한 다양한 기법 실험
 
@@ -126,21 +126,32 @@ HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
 - **LLaVA** (멀티모달 - 이미지+텍스트)
 - **BLIP-2** (이미지 캡셔닝 특화)
 
-**RAG 시스템 (Retrieval-Augmented Generation)**
+**4. RAG 시스템 (Retrieval-Augmented Generation)**
 
 전문 심리학 지식 베이스를 활용한 정확한 해석
 
 **파이프라인**
+
 [사용자 질문] 
+
     ↓
+    
 [1. Chunking] 심리 서적/논문을 의미 단위로 분할
+
     ↓
+    
 [2. Embedding] BGE-M3 모델로 벡터화 (파인튜닝)
+
     ↓
+    
 [3. Retrieval] ChromaDB에서 유사 문서 검색
+
     ↓
+    
 [4. Re-ranking] Cross-Encoder로 최적화(**BCE Loss** vs **Margin Loss** 비교)
+
     ↓
+    
 [5. Generation] LLM이 컨텍스트 기반 답변 생성
 
 
@@ -148,25 +159,25 @@ HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
 
 
 ---
-## 🛠️ 기술 스택
+## [기술 스택]
 
-### AI/ML
+**AI/ML**
 - **Deep Learning**: PyTorch, Transformers (Hugging Face)
 - **Computer Vision**: YOLOv8 (Ultralytics), Detectron2
 - **LLM**: Qwen 2.5, LLaVA, GPT-4o
 - **Embedding**: BGE-M3, Sentence-Transformers
 - **Vector DB**: ChromaDB
 
-### Backend
+**Backend**
 - **Framework**: FastAPI
 - **API**: RESTful API
 - **Authentication**: JWT
 
-### Frontend
+**Frontend**
 - **Framework**: React/Next.js
 - **State Management**: Redux/Context API
 - **Styling**: Tailwind CSS
 
-### DevOps
+**DevOps**
 - **Containerization**: Docker
 ---
