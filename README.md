@@ -174,3 +174,13 @@ HTP 그림의 주요 요소(집, 나무, 사람)와 세부 객체 탐지
 **DevOps**
 - **Containerization**: Docker
 ---
+## [홈페이지]
+**전체 UI**
+<img width="1513" height="724" alt="image" src="https://github.com/user-attachments/assets/be7fae11-ba37-4e83-a393-222c90939000" />
+**검사 해석 출력 및 채팅**
+<img width="1518" height="752" alt="image" src="https://github.com/user-attachments/assets/bd03f5c7-fb20-4b4c-b6d1-e2f514aad98f" />
+
+
+
+
+
